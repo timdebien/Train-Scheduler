@@ -6,23 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <!-- Bootstrap CDN-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+ 
   <!-- Firebase Reference -->
   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  
 <title>chuuuu chuuuuu</title>
+<style>
+
+   
+</style>
 </head>
 
         
         <body>
             <div class="container">
-                <div class="jumbotron">
-                    <h1 class="text-center">Train Schedule</h1>
-                </div>
-        
+               <div class="row">
+                    <div class="space header">
+                    <h1 class="text-center">space train schedule</h1>
+                    </div>   
+                </div>        
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         
@@ -57,30 +63,32 @@
         
                             <div class="panel-body">
                                 <!-- Entry Form -->
-                                <form>
+                                <form class="formstyle">
                                     <div class="form-group">
                                         <label for="">Train Name</label>
-                                        <input type="text" class="form-control" id="trainInput">
+                                        <input type="text" class="form-control" id="train-input">
                                     </div>
         
                                  
         
                                     <div class="form-group">
                                         <label for="">Destination</label>
-                                        <input type="text" class="form-control" id="destinationInput">
+                                        <input type="text" class="form-control" id="destination-input">
                                     </div>
         
                                     <div class="form-group">
                                         <label for="">First Train Time (HH:mm - military time)</label>
-                                        <input type="text" class="form-control" id="TimeInput">
+                                        <input type="text" class="form-control" id="Time-input">
                                     </div>
         
+                                    
+                                    <!-- js -->
                                     <div class="form-group">
                                         <label for="">Frequency (min)</label>
-                                        <input type="text" class="form-control" id="frequencyInput">
+                                        <input type="text" class="form-control" id="frequency-input">
                                     </div>
                                     
-                                    <button type="submit" class="btn btn-primary" id="addTrainBtn">Submit</button>
+                                    <button type="submit" class="btn btn-primary" id="add-space-train">Submit</button>
                                 </form>
                             </div>
                         </div>
@@ -88,7 +96,14 @@
                 </div>
             </div>
             <!-- Javascript -->
-            <script src="js/train.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+            <!-- moment.js -->
+            <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+             <!--jquery  -->
+            <script src="https://code.jquery.com/jquery.js"></script>
+            <!-- js -->
+            <script type="text/javascript" src="assets/js/train.js"></script>    
+           
         
         
     
